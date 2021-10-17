@@ -1,42 +1,37 @@
 USE employeeTracker;
 
-INSERT INTO department (name)
-VALUES ("Sales");
-INSERT INTO department (name)
-VALUES ("Engineering");
-INSERT INTO department (name)
-VALUES ("Finance");
-INSERT INTO department (name)
-VALUES ("Legal");
+INSERT INTO departments (name)
+VALUES 
+("Animal Control"),
+("Athletics"),
+("Maintenance"),
+("Event Managment"),
+("Aquatics");
 
-INSERT INTO role (title, salary, department_id)
-VALUES ("Sales Lead", 100000, 1);
-INSERT INTO role (title, salary, department_id)
-VALUES ("Senior Engineer", 150000, 2);
-INSERT INTO role (title, salary, department_id)
-VALUES ("Software Engineer", 120000, 2);
-INSERT INTO role (title, salary, department_id)
-VALUES ("Accountant", 125000, 3);
-INSERT INTO role (title, salary, department_id)
-VALUES ("Legal Team Lead", 250000, 4);
+INSERT INTO roles (title, salary, department_id)
+VALUES 
+("Animal Control Officer", 100000, 1),
+("Athletics coordinator", 150000, 2),
+("Maintenance worker", 120000, 2),
+("Head Lifeguard", 125000, 3),
+("Event Coordinator", 250000, 4);
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Donna", "Meagle", 1, 3);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Chris", "Traeger", 2, 1);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Ann", "Perkins", 3, null);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Ben", "Wyatt", 2, null);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Ron", "Swanson", 5, null);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Leslie", "Knope", 2, null);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("April", "Ludgate", 4, 7);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Andy", "Dwyer", 1, 4);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Tom", "Haverford", 1, 3);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Jerry", "Gergich", 3, 4);
+INSERT INTO managers (manager_name)
+VALUES
+('Ron Swanson'),
+('Leslie Knope'),
+('Ben Wyatt'),
+('April Ludgate');
+
+INSERT INTO employees (first_name, last_name, role_id, manager_id, department_id)
+VALUES ("Donna", "Meagle", 5, 2, 4),
+ ("Bobby", "Newport", 1, 4, 1),
+ ("Ann", "Perkins", 3, 3, 3),
+ ("Mona-Lisa", "Saperstein", 5, 2, 4),
+ ("Jean-Ralphio", "Saperstein", 1, 4, 1),
+ ("Tammy", "Swanson", 3, 3, 3),
+ ("Chris", "Treager", 4, 1, 5),
+ ("Andy", "Dwyer", 2, 1, 2),
+ ("Tom", "Haverford", 4, 2, 4),
+ ("Jerry", "Gergich", 3, 3, 3),
+ ("Jeremy", "Jamm", 2, 1, 2);
