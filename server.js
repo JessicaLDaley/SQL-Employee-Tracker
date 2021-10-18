@@ -1,7 +1,11 @@
 const mysql = require("mysql2");
 const inquirer = require("inquirer");
+const chalk = require("chalk");
 require("console.table");
 
+const log = console.log;
+
+log(chalk.bold.cyan("ⒺⓂⓅⓁⓄⓎⒺⒺ ⓉⓇⒶⒸⓀⒺⓇ"));
 
 const connection = mysql.createConnection({
   host: "localhost", 
