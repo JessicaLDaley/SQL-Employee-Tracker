@@ -170,11 +170,11 @@ function promptDepartment(departmentChoices) {
     });
 }
 
-//========================================= 3."View Employees by Manager"
+//========================================== 3."View Employees by Manager"
 
 
 
-//========================================= 4."Add Employee" / CREATE: INSERT INTO
+//========================================== 4."Add Employee" / CREATE: INSERT INTO
 
 // Make a employee array
 
