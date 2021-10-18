@@ -5,7 +5,8 @@
   
   
   
-  ![employee tracker ss](https://user-images.githubusercontent.com/79805880/137666619-c184ca67-8a1f-4a25-b07f-8fef39b18f64.png)
+![trackerSS](https://user-images.githubusercontent.com/79805880/137765227-082bc0f5-583f-4e2b-b968-bc8fabfd825b.png)
+
 
   
   
