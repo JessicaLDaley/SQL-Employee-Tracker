@@ -102,7 +102,7 @@ function viewEmployee() {
  
 }
 
-//========================================= 2."View Employees by Department" / READ by, SELECT * FROM
+//=========================================== 2."View Employees by Department" / READ by, SELECT * FROM
 
 // Make a department array
 
