@@ -4,9 +4,9 @@
 
   
   
-  
-![trackerSS](https://user-images.githubusercontent.com/79805880/137765227-082bc0f5-583f-4e2b-b968-bc8fabfd825b.png)
 
+
+![trackerSS](https://user-images.githubusercontent.com/79805880/137924448-3c017243-09d0-482b-ae0e-ef0fd3166356.png)
 
   
   
