@@ -31,7 +31,7 @@ function firstPrompt() {
     .prompt({
       type: "list",
       name: "task",
-      message: "Would you like to do?",
+      message: "What would you like to do?",
       choices: [
         "View Employees",
         "View Employees by Department",
@@ -134,7 +134,7 @@ function viewEmployeeByDepartment() {
     }));
 
     console.table(res);
-    console.log("Department view succeed!\n");
+    console.log("Department view success!\n");
 
     promptDepartment(departmentChoices);
   });
@@ -150,7 +150,7 @@ function promptDepartment(departmentChoices) {
       {
         type: "list",
         name: "departmentId",
-        message: "Which department would you choose?",
+        message: "Choose a department",
         choices: departmentChoices
       }
     ])
@@ -170,7 +170,7 @@ function promptDepartment(departmentChoices) {
         if (err) throw err;
 
         console.table("response ", res);
-        console.log(res.affectedRows + "Employees are viewed!\n");
+        console.log(res.affectedRows + "Employees are viewed \n");
 
         firstPrompt();
       });
@@ -186,7 +186,7 @@ function promptDepartment(departmentChoices) {
 // Make a employee array
 
 function addEmployee() {
-  console.log("Inserting an employee!")
+  console.log("Adding employee!")
 
   var query =
     `SELECT r.id, r.title, r.salary 
@@ -319,7 +319,7 @@ function updateEmployeeRole() {
 }
 
 function employeeArray() {
-  console.log("Updating an employee");
+  console.log("Updating employee");
 
   var query =
     `SELECT e.id, e.first_name, e.last_name, r.title, d.name AS department, r.salary, CONCAT(m.first_name, ' ', m.last_name) AS manager
@@ -339,14 +339,14 @@ function employeeArray() {
     }));
 
     console.table(res);
-    console.log("employeeArray To Update!\n")
+    console.log(" Updating employeeArray \n")
 
     roleArray(employeeChoices);
   });
 }
 
 function roleArray(employeeChoices) {
-  console.log("Updating an role");
+  console.log("Updating role");
 
   var query =
     `SELECT r.id, r.title, r.salary 
@@ -361,7 +361,7 @@ function roleArray(employeeChoices) {
     }));
 
     console.table(res);
-    console.log("roleArray to Update!\n")
+    console.log("Updating roleArray \n")
 
     promptEmployeeRole(employeeChoices, roleChoices);
   });
@@ -374,7 +374,7 @@ function promptEmployeeRole(employeeChoices, roleChoices) {
       {
         type: "list",
         name: "employeeId",
-        message: "Which employee do you want to set with the role?",
+        message: "Which employee do you want to assign this role?",
         choices: employeeChoices
       },
       {
